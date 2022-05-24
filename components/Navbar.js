@@ -1,7 +1,8 @@
 import Link from 'next/link'
 
 const Navbar = () => (
-<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav 
+className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
         {/**TODO: Reemplazar logo por uno con letras blancas, sin fondo y que no aumente el height del navbar*/}
