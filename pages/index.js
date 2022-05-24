@@ -2,9 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '../components/Navbar'
-import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
-import {  } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowTrendUp, faGraduationCap, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 
@@ -18,7 +16,7 @@ export default function Home() {
           <div className='card card-body bg-secondary text-light'>
             <div className='row'>
               <div className='col-md-4'>
-                <img src='/barbara-makeup.jpeg' alt='' className='img-fluid'/>
+                <Image src='/barbara-makeup.jpeg' width={400} height={400} alt='Barbara Machado' className='img-fluid'/>
               </div>
               <div className='col-md-8'>
                 <h1>Bienvenidos</h1>
@@ -50,14 +48,14 @@ export default function Home() {
         
         <div className='col-md-6'>
           <div className='card card-body bg-secondary'>
-                <img src='/barbara-makeup3.jpeg' alt='' className='img-fluid py-2'/>
+                <Image src='/barbara-makeup3.jpeg' width={400} height={500} alt='Barbara Machado recreando el arte de maquillar' className='img-fluid py-2'/>
           </div>
         </div>
       </div>
 
       {/**Third Section */}
       <div className='col-md-12 py-4'>
-        <img src='pagoseguro.png' alt='' className='img-fluid py-2'/>
+        <Image src='/pagoseguro.png' width={1200} height={200} alt='Pago seguro' className='img-fluid py-2'/>
       </div>
 
       {/**Fourth Section */}
@@ -111,8 +109,7 @@ export default function Home() {
                 icon={faArrowTrendUp} />
         </div>
         <div className='col-md-4'>
-          <button type="button" class="btn btn-secondary btn-circle btn-xl">Gray circular button</button>
-	
+          <button type="button" class="btn btn-secondary btn-circle btn-xl">Gray circular button</button>	
         </div>
       </div>
     </Layout>

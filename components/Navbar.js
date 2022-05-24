@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Navbar = () => (
 <nav 
@@ -6,7 +7,7 @@ className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
         {/**TODO: Reemplazar logo por uno con letras blancas, sin fondo y que no aumente el height del navbar*/}
-        <img src='/logo.jpeg' alt='' width="190" height="24" className='img-fluid'/>
+        <Image src='/logo.jpeg' alt='logotipo de Barbara Machado' width="200" height="50" className='img-fluid'/>
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
