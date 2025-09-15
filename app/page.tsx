@@ -42,12 +42,12 @@ export default function Home() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="w-full px-8 py-16 lg:py-24">
+      <section className="w-full px-8 py-16 lg:py-24 ">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ">
             {/* Quote Section */}
-            <div className="space-y-8">
-              <blockquote className="text-white text-2xl lg:text-3xl xl:text-4xl leading-relaxed font-light">
+            <div className="space-y-8 items-center">
+              <blockquote className="text-white text-2xl lg:text-3xl xl:text-4xl leading-relaxed font-light justify-center text-center">
                 <span className="text-5xl lg:text-6xl">"</span>
                 Visible no solo <em className="font-dancing-script text-3xl lg:text-4xl xl:text-5xl">transforma</em> tu
                 presencia en redes, transforma la forma{" "}
@@ -58,12 +58,14 @@ export default function Home() {
                 <span className="text-5xl lg:text-6xl">"</span>
               </blockquote>
 
+              <div className="flex justify-center">
               <Button
                 className="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-8 py-4 rounded-full text-lg transition-colors duration-200 shadow-lg underline"
                 size="lg"
               >
                 Descubre más
               </Button>
+            </div>
             </div>
 
             {/* Photo Section */}
