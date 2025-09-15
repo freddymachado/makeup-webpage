@@ -59,13 +59,13 @@ export default function Home() {
               </blockquote>
 
               <div className="flex justify-center">
-              <Button
-                className="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-8 py-4 rounded-full text-lg transition-colors duration-200 shadow-lg underline"
-                size="lg"
-              >
-                Descubre más
-              </Button>
-            </div>
+                <Button
+                  className="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-8 py-4 rounded-full text-lg transition-colors duration-200 shadow-lg underline"
+                  size="lg"
+                >
+                  Descubre más
+                </Button>
+              </div>
             </div>
 
             {/* Photo Section */}
@@ -73,13 +73,13 @@ export default function Home() {
               <div className="relative">
                 {/* Phone frame effect */}
                 <div className="bg-gray-200 p-4 rounded-3xl shadow-2xl max-w-sm">
-                  <div className="bg-white p-2 rounded-2xl">
-                    <img
-                      src="/images/professional-woman.png"
+                    <Image
+                      src="/barbara-makeup3.jpeg"
                       alt="Professional woman in business attire"
                       className="w-full h-auto rounded-xl grayscale"
+                      width={400}
+                      height={600}
                     />
-                  </div>
                 </div>
               </div>
             </div>
