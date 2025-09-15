@@ -1,23 +1,31 @@
 import { Button } from "../components/ui/button"
+import { Ballet } from 'next/font/google'
+import localFont from 'next/font/local'
+import Image from 'next/image'
 
+
+const dancingScript = localFont({ src: '../public/fonts/MrDafoe-Regular.ttf' })
+
+
+const ballet = Ballet({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <main className="min-h-screen w-full" style={{ backgroundColor: "#3d2f1f" }}>
       {/* Hero Section */}
       <section className="h-screen w-full flex items-center justify-center">
-        <div className="flex flex-col items-center gap-12">
+        <div className="flex flex-col items-center gap-12 mt-40">
           {/* Logo Section */}
           <div className="flex flex-col items-center gap-2">
             {/* Top line with MARCA and PERSONAL */}
-            <div className="flex items-center gap-8 text-white text-sm font-medium tracking-[0.2em] uppercase">
+            <div className="flex items-center gap-8 text-white text-sm font-small tracking-[0.1em]">
               <span>MARCA</span>
+            <div className={`text-white text-7xl md:text-8xl lg:text-9xl font-dancing-script font-normal leading-none ${ballet.className}`}>
+              Visible
+            </div>
               <span>PERSONAL</span>
             </div>
 
-            <div className="text-white text-7xl md:text-8xl lg:text-9xl font-dancing-script font-normal leading-none">
-              Visible
-            </div>
 
             {/* Bottom text */}
             <div className="text-white text-sm font-medium tracking-[0.2em] uppercase">BOOTCAMP INTENSIVO</div>
