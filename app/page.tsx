@@ -232,6 +232,78 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Services Section */}
+      <section className="w-full px-8 py-16 lg:py-24 ">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-3 gap-12 lg:gap-16 items-center ">
+            {/* Quote Section */}
+            <div className="space-y-8 items-center">
+              <blockquote className="text-white text-2xl lg:text-2xl xl:text-2xl leading-relaxed font-light justify-center text-center">
+               <em className="font-dancing-script text-2xl lg:text-2xl xl:text-2xl">¿Qué es Visible®?</em> <br />
+                <span className="text-white text-2xl lg:text-2xl xl:text-2xl leading-relaxed font-light justify-items-start text-center">Es un programa
+intensivo de 6 semanas
+diseñado para ayudarte
+a construir, ordenar y
+mostrar tu marca
+personal con intención,
+autenticidad y
+estrategia, a través de
+una metodología
+práctica y acompañada,</span>
+              </blockquote>
+
+            </div>
+
+            {/* Photo Section */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                {/* Phone frame effect */}
+                <div className="bg-gray-800 p-4 rounded-3xl shadow-2xl min-w-sm">
+                    <Image
+                      src="/logo.png"
+                      alt="Professional woman in business attire"
+                      className="w-full h-auto rounded-xl grayscale"
+                      width={400}
+                      height={600}
+                    />
+                </div>
+              </div>
+            </div>
+            {/* Quote Section */}
+            <div className="space-y-8 items-center">
+              <blockquote className="text-white text-2xl lg:text-2xl xl:text-2xl leading-relaxed font-light justify-center text-center">
+               <em className="font-dancing-script text-2xl lg:text-2xl xl:text-2xl">transformarás tu
+presencia digital en
+una herramienta real
+
+de posicionamiento
+profesional.</em> <br />
+                <span className="text-white text-2xl lg:text-2xl xl:text-2xl leading-relaxed font-light justify-items-start text-center">Este no es un curso
+más, es un espacio
+guiado para que
+pongas manos
+
+a la obra con
+claridad, propósito y
+dirección</span>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div className="flex justify-center">
+        <Button
+          className="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-8 py-4 rounded-full 
+            text-lg transition-colors duration-200 shadow-lg underline"
+          size="lg"
+          onClick={() => 
+            window.open('https://wa.me/584241948436?text=Hola,%20quiero%20más%20información%20sobre%20el%20bootcamp', '_blank')}
+        >
+          Descubre más
+        </Button>
+      </div>
     </main>
   )
 }
