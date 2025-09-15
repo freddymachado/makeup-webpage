@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from "../components/ui/button"
 import { Ballet } from 'next/font/google'
 import localFont from 'next/font/local'
@@ -35,6 +37,7 @@ export default function Home() {
           <Button
             className="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-8 py-4 rounded-full text-lg transition-colors duration-200 shadow-lg"
             size="lg"
+            onClick={() => window.open('https://wa.me/584241948436?text=Hola,%20quiero%20más%20información%20sobre%20el%20bootcamp', '_blank')}
           >
             ¿Quieres inscribirte?
           </Button>
@@ -62,6 +65,7 @@ export default function Home() {
                 <Button
                   className="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-8 py-4 rounded-full text-lg transition-colors duration-200 shadow-lg underline"
                   size="lg"
+                  onClick={() => window.open('https://wa.me/584241948436?text=Hola,%20quiero%20más%20información%20sobre%20el%20bootcamp', '_blank')}
                 >
                   Descubre más
                 </Button>
